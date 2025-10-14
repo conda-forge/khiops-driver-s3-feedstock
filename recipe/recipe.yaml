@@ -10,7 +10,7 @@ source:
   sha256: 6475e22b8feb4c3e6c04e89a77f00587ed5a11007fae4476f5bf781917e815e0
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -30,10 +30,10 @@ requirements:
 
 tests:
   - script:
-    - if: unix
-      then: test -f $PREFIX/lib/libkhiopsdriver_file_s3${SHLIB_EXT}
-      else:
-        - if not exist %PREFIX%\lib\libkhiopsdriver_file_s3.dll exit 1
+      - if: unix
+        then: test -f $PREFIX/lib/libkhiopsdriver_file_s3${SHLIB_EXT}
+        else:
+          - if not exist %PREFIX%\lib\libkhiopsdriver_file_s3.dll exit 1
 
 about:
   homepage: https://khiops.org
