@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/KhiopsML/khiopsdriver-s3/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 7717c626b2ee8e3c52af3b5e57936091ea2a6867624f8fb60044cec29f1e5240
+  sha256: a34eb599c52e8156a4b56f60310970f9cb8122e2d864d36c7f437ac9f72fa7be
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
