@@ -1,5 +1,5 @@
 aws_sdk_cpp:
-- 1.11.606
+- 1.11.833
 c_stdlib:
 - vs
 channel_sources:
@@ -11,9 +11,9 @@ cxx_compiler:
 fmt:
 - '12.1'
 libboost_devel:
-- '1.86'
+- '1.88'
 libboost_headers:
-- '1.86'
+- '1.88'
 spdlog:
 - '1.17'
 target_platform:
