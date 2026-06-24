@@ -1,13 +1,16 @@
 context:
-  version: "0.0.15"
+  version: "0.0.25"
 
 package:
   name: khiops-driver-s3
   version: ${{ version }}
 
 source:
-  url: https://github.com/KhiopsML/khiopsdriver-s3/archive/refs/tags/${{ version }}.tar.gz
-  sha256: a34eb599c52e8156a4b56f60310970f9cb8122e2d864d36c7f437ac9f72fa7be
+  - url: https://github.com/KhiopsML/khiopsdriver-s3/archive/refs/tags/${{ version }}.tar.gz
+    sha256: c8fe642d1d7d393e99428f0057e97d22f4234feb92e97faf1761f9315fab1ff7
+  - url: https://github.com/KhiopsML/khiopsdriver-shared/archive/6b067e9cba39cdd2be4d0c32b64914ca9c98ce3b.tar.gz
+    sha256: a033689e6d2694005834999b404869f9fc35c308eeae17cad26e0c4a0a6f54c4
+    target_directory: shared
 
 build:
   number: 3
