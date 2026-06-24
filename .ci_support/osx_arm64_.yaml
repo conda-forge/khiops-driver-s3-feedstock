@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 MACOSX_SDK_VERSION:
 - '11.0'
 aws_sdk_cpp:
-- 1.11.606
+- 1.11.833
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -19,9 +19,9 @@ cxx_compiler_version:
 fmt:
 - '12.1'
 libboost_devel:
-- '1.86'
+- '1.88'
 libboost_headers:
-- '1.86'
+- '1.88'
 macos_machine:
 - arm64-apple-darwin20.0.0
 spdlog:
