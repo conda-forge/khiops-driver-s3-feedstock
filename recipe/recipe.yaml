@@ -1,16 +1,13 @@
 context:
-  version: "0.0.25"
+  version: "0.0.32"
 
 package:
   name: khiops-driver-s3
   version: ${{ version }}
 
 source:
-  - url: https://github.com/KhiopsML/khiopsdriver-s3/archive/refs/tags/${{ version }}.tar.gz
-    sha256: c8fe642d1d7d393e99428f0057e97d22f4234feb92e97faf1761f9315fab1ff7
-  - url: https://github.com/KhiopsML/khiopsdriver-shared/archive/6b067e9cba39cdd2be4d0c32b64914ca9c98ce3b.tar.gz
-    sha256: a033689e6d2694005834999b404869f9fc35c308eeae17cad26e0c4a0a6f54c4
-    target_directory: shared
+  - url: https://github.com/KhiopsML/khiops-drivers/archive/refs/tags/${{ version }}.tar.gz
+    sha256: 995ac2b39c834bd87609326b0ccfd418128560adaf45676a432a44646949fdec
 
 build:
   number: 0
@@ -35,8 +32,7 @@ tests:
   - script:
       - if: unix
         then: test -f $PREFIX/lib/libkhiopsdriver_file_s3${SHLIB_EXT}
-        else:
-          - if not exist %PREFIX%\Library\bin\libkhiopsdriver_file_s3.dll exit 1
+        else: if not exist %PREFIX%\Library\bin\libkhiopsdriver_file_s3.dll exit 1
 
 about:
   homepage: https://khiops.org
@@ -47,5 +43,8 @@ about:
 
 extra:
   recipe-maintainers:
+    - tpochon
+    - bruno-at-orange
     - popescu-v
+    - tristandeb1
     - sgouache
