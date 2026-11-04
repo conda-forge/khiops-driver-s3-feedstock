@@ -43,5 +43,8 @@ about:
 
 extra:
   recipe-maintainers:
+    - tpochon
+    - bruno-at-orange
     - popescu-v
+    - tristandeb1
     - sgouache
