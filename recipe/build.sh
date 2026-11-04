@@ -5,7 +5,7 @@ set -euo pipefail
 export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 
 # Configure project
-cmake ${CMAKE_ARGS} --fresh -G Ninja -D CMAKE_BUILD_TYPE=Release -D S3_PLUGIN_BUILD_ENV=conda -B build/s3 -S .
+cmake ${CMAKE_ARGS} --fresh -G Ninja -D CMAKE_BUILD_TYPE=Release -D S3_PLUGIN_BUILD_ENV=conda -D KHIOPS_DRIVER=s3 -B build/s3 -S .
 
 # Build
 cmake --build build/s3 --target khiopsdriver_file_s3
